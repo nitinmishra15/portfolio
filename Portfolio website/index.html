@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+  <div id="header">
+    <div class="container">
+        <nav>
+          
+            <ul>
+            <li> <a href= "#header" >Home</a></li>
+            <li> <a href= "#about" >About</a></li>
+            <li> <a href= "#services" >Services</a></li>
+            <li> <a href= "#portfolio" >Portfolio</a></li>
+            <li> <a href= "#contact" >Contact</a></li>
+           
+            </ul>
+          
+             
+        </nav>
+
+        <div class="header-text">
+          <!-- <img src="8.jpeg" width:200px  height="300px" margin-left: 10px; > -->
+            <p>Mern Developer</p>
+            <h1>I am a <span>Nitin </span>Kumar Mishra</h1>
+        </div>
+    </div>
+  </div>
+
+    <!-- ---------About------- -->
+
+  <div id ="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="u.jpeg" >
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title"> About Me</h1>
+          <p>I am a proactive and ambitious 4th- year Engineering student with passion of Web Development . I thrive on solving complex problems and creating efficient, scalable solutions. 
+
+            As a MERN stack developer, I specialize in building dynamic, responsive, and scalable web applications that deliver seamless user experiences . I believe in writing clean, maintainable code and am a strong advocate for best practices in software development . 
+            I am always keen to explore new technologies and stay updated with the latest trends in web development. My passion for learning drives me to continuously improve my skills and adapt to the ever-evolving tech landscape.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+            <p class="tab-links"  onClick="opentab('experience')">Experience</p>
+            <p class="tab-links"  onClick="opentab('education')">Education</p>
+          </div>
+           
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>HTML5</span>
+              </li>
+              <li>
+                <span>CSS</span>
+              </li>
+              <li>
+                <span>Javascript</span>
+              </li>
+              <li>
+                <span>React</span>
+              </li>
+              <li>
+                <span>Nodejs</span>
+              </li>
+              <li>
+                <span>Express</span>
+              </li>
+              <li>
+                <span>Mongodb</span>
+              </li>
+              <li>
+                <span>DSA</span>
+              </li>
+              <li>
+                <span>C++</span>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+            <li>
+                <span>July-August</span> </br> IBM Skill Build 
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+             <li>
+                <span>2021-2025</span> Btech </br> AKGEC Ghaziabad 
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ---------services---------- -->
+   <div id="services">
+    <div class="container">
+      <h1 class="sub-title"></h1>
+      <div class="services-List">
+        
+      </div>
+    </div>
+   </div>
+
+   <!-- --------portfolio--------- -->
+
+   <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+      
+        <div class="work">
+          <img src="3.png" width="60%">
+          <div class="layer">
+            <h3>Restaurant Website </h3>
+            <p> Designed and optimized relational databases to store restaurant data, including menu items, customer information</p>
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+              <p><a href="https://github.com/nitinmishra15/restaurant">Github Link</a></p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="4.png" width="60%">
+          <div class="layer">
+            <h3>Weather Website</h3>
+            <p> Developed and maintained features for a weather application, ensuring accurate and up-to-date weather information for
+              users</p>
+             <p>  <a href="https://github.com/nitinmishra15/weatherwebsite"> Github Link</a></p> 
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+
+   <!-- -----contact------- -->
+
+   <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p ><i class="fa fa-send-o" style="font-size:24px"></i>nitinmishra1500@gmail.com</p>
+          <p> <i class="fa fa-phone" style="font-size:24px"></i> 8175890588</p>
+          <div class="social-icons">
+            
+            <i class="fa fa-twitter" style="font-size:24px"></i>
+            <i class="fa fa-facebook-f" style="font-size:24px"></i>
+            <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+            <i class="fa fa-instagram" style="font-size:24px"></i>
+            
+          </div>
+          <a href="Nitin-reume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea type="Message" rows="6" placeholder="Your Message" ></textarea>
+            <button type="submit" class="btn btn2">Submit </button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      
+    </div>
+   </div>
+
+  <script>
+    
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzj_zphBBtP52JBJ9_L5rBsjTbT9iz5eyUAkgr1mLHSocMDp9TxqvA5YOmr528QcLu0bg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML ="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },4000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+         
+
+</body>
+</html>
